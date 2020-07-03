@@ -9,3 +9,13 @@
   routeParts:
     'node':
       handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+
+-
+  name:          'Preview JSON'
+  uriPattern:    'neos/preview.json'
+  defaults:
+    '@package' : 'Neos.Neos'
+    '@controller' : 'Frontend\Node'
+    '@action':   'preview'
+    '@format':   'json'
+  appendExceedingArguments: true
